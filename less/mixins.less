@@ -1,1 +1,27 @@
 // Mixins in here
+
+//Button Template - Parametric Mixins..
+
+/*btn(@backgroundColor, @borderStyle, @borderWidth, @borderColor, @paddingInREM, @borderRadius, @textColor, @fontSize) {
+    background: @backgroundColor;
+    border-style: @borderStyle;
+    border-width: @borderWidth;
+    border-color: @borderColor;
+    padding: @paddingInREM;
+    border-radius: @borderRadius;
+    color: @textColor;
+    font-size: @fontSize;
+}
+*/
+
+.buttonMixin(@borderWidth, @borderStyle, @borderColor, @borderRadius, @paddingtopbot, @paddingLandR, @background, @fontSize, @textcolor){
+    border-width: @borderWidth;
+    border-style: @borderStyle;
+    border-color: @borderColor;
+    border-radius: @borderRadius;
+    padding: @paddingtopbot @paddingLandR;
+    background: @background;
+    font-size: @fontSize;
+    color: @textcolor;
+  }
+  

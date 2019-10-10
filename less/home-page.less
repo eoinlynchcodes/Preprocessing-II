@@ -59,3 +59,45 @@
     }
   }
 }// home
+
+header{
+  padding: 20px;
+  align-content: center;
+  border-bottom: 2px dashed lightgray;
+  width: 100%;
+  border-width: 100%;
+}
+
+
+.Welcome{
+  width: 100%;
+  border-bottom: 2px dashed lightgray;
+}
+
+.btn{
+  .buttonMixin(2px, solid, green, 12px, 2rem, 5rem, green, 1rem, white);
+
+  &:hover{
+    background-color: darken(green, 20%);
+    cursor: pointer;
+  }
+}
+
+.content-pick{
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.destination{
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+  }
+}
